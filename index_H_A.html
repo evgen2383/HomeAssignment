@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="main.js"> </script>
+    <script>
+    ////// Д.З. вычисляем число Фибоначчи через рекурсию
+    //   function fibonacci(n){
+    //     var result;
+    //     if (n <= 1 ){
+    //       return n;
+    //     }
+    //     else {
+    //     result = fibonacci(n - 1) + fibonacci(n - 2);
+    //     return  result;
+    //     }
+    //   }
+    //   alert (fibonacci(1));
+
+////// Д.З. вычисляем число Фибоначчи без рекурсии
+      // function fibonacci(n) {
+      //   var a = 1;
+      //   var b = 1;
+      //   var c;
+      //   for (var i = 3; i <= n; i++) {
+      //     c = a + b;
+      //     a = b;
+      //     b = c;
+      //   }
+      //   return b;
+      // }
+      // alert (fibonacci(11));
+
+///////Home assignment вычисляем факториал
+//     function factorial(n) {
+//       var n;
+//       if (n > 1){
+//         n = n * factorial(n - 1);
+//         return n;
+//       }
+//       else {
+//         return 1;
+//       }
+//     }
+//     alert (factorial(0));
+
+////////Homa Assignment квадратное уравнение
+//     var a = prompt('Введите значение "а"', 20);
+//     var b = prompt('Введите значение "b"', 30);
+//     var c = prompt('Введите значение "с"', 25);
+//     var d;
+//     var x1;
+//     var x2;
+//     // function quad_equat(a, b, c){
+//     //   }
+//     d = (b * b) - (4 * a * c);
+//     alert (d);
+//       if (d > 0) {
+//         x1 = (- b + Math.sqrt(d)) / (2*a);
+//         x2 = (- b - Math.sqrt(d)) / (2*a);
+//         alert(x1);
+//         alert(x2);
+//       }
+//       else if (d = 0) {
+//         x1 = - (b / (2 * a));
+//         x2 = x1;
+//         alert(x1);
+//         alert(x2);
+//       }
+//       else {
+//         alert('Данное уравнения не имеет решения. Введите значения еще раз')
+//       }
+
+//////глобальный счетчик
+//     var currentCount = 1;
+//     function makeCounter(){
+//       return function() {
+//         return currentCount++;
+//       }
+//     }
+//     var counter = makeCounter();
+//     var counter2 = makeCounter();
+//
+//     alert(counter());
+//     alert(counter());
+//
+//     alert(counter2());
+//     alert(counter2());
+
+
+      // var user = {
+      //   name: 'John',
+      //   lastname: 'Doe',
+      //   age: '21'
+      // }
+
+      // console.log(user.name);
+      // console.log(user['lastname']);
+      // user.age = 18;
+      // console.log(user.age);
+      // user.city = 'Kh';
+      // console.log(user);
+
+      // for(var prop in user){
+      //   console.log(prop + ' = ' + user[prop]);
+      // }
+
+      // var arr = {
+      //   en : ['blue', 'red', 'green'];
+      //   ru : ['голубой', 'красный', 'зеленый'];
+      // }
+      // console.log(arr.ru[1]);
+      // console.log(arr.ru['ru'][1]);
+
+
+//////
+      // var arr = [[1,2,3,[4,5]],[6,7],[8,[9,[10,11,12,[13,14,15]]]]];
+      // var arr2 = [];
+      // function arrey(a){
+      //   for (var i = 0; i <= a.length; i++) {
+      //    if (Arrey.isArray(a[i])) {
+      //     arrey(a[i]);
+      //    }
+      //    else {
+      //     arr2.push(a[i]);
+      //    }
+
+      // }
+      // arrey(arr);
+      // console.log(arr2);
+
+///////
+      // var a = +prompt('Enter a number', 1);
+      // switch (a){
+      //   case (a%a == 0):
+      //   console.log(true);
+      //   breack;
+      //
+      //   case (a%2 == 0):
+      //   console.log(true);
+      //   breack;
+      //
+      //   case (a%5 == 0):
+      //   console.log(true);
+      //   breack;
+      //
+      //   default:
+      //   console.log(false);
+      //   }
+
+
+//////Д.З. В зависимости от числа, какой день недели выведеться
+   // var a = +prompt('Enter a number', 1);
+   // console.log(typeof(a));
+   // var arr1 = [1, 8, 15, 22, 29];
+   // var arr2 = [2, 9, 16, 23, 30];
+   // var arr3 = [3, 10, 17, 24, 31];
+   // var arr4 = [4, 11, 18, 25];
+   // var arr5 = [5, 12, 19, 26];
+   // var arr6 = [6, 13, 20, 27];
+   // var arr7 = [7, 14, 21, 28];
+   // var check = 0;
+   // var b;
+   // if (check <= arr1.indexOf(a)){
+   //   b = 1;
+   // }
+   // if (check <= arr2.indexOf(a)){
+   //   b = 2;
+   // }
+   // if (check <= arr3.indexOf(a)){
+   //   b = 3;
+   // }
+   // if (check <= arr4.indexOf(a)){
+   //   b = 4;
+   // }
+   // if (check <= arr5.indexOf(a)){
+   //   b = 5;
+   // }
+   // if (check <= arr6.indexOf(a)){
+   //   b = 6;
+   // }
+   // if (check <= arr7.indexOf(a)){
+   //   b = 7;
+   // }
+   //    switch (b){
+   //      case 1:
+   //      alert('Понедельник');
+   //      break;
+   //
+   //      case 2:
+   //      alert('Вторник');
+   //      break;
+   //
+   //      case 3:
+   //      alert('Среда');
+   //      break;
+   //
+   //      case 4:
+   //      alert('Четверг');
+   //      break;
+   //
+   //      case 5:
+   //      alert('Петница');
+   //      break;
+   //
+   //      case 6:
+   //      alert('Субота');
+   //      break;
+   //
+   //      case 7:
+   //      alert('Воскресенье');
+   //      break;
+   //
+   //      default:
+   //      alert('Дней в месяце 31 день');
+   //      break;
+   //      }
+
+
+//задача складываmь длинное число введенное в строку в сумму отдельных чисел
+  //  var x = prompt('string', x);
+  //
+  //  function countString(str){
+  //   var result = 0;
+  //   for (var i = 0; i < str.length; i++) {
+  //     result += parseInt(str[i]);
+  //     console.log(result);
+  //     /*if (result > 10){
+  //       var str2 = result.toString();
+  //       countString(str2)
+  //     }
+  //     else {
+  //       return result;
+  //     }*/
+  //   }
+  //   return result;
+  // }
+  // var a = countString(x);
+  // alert(a);
+
+  //////процес изучения материала на лерн js
+
+  // alert('Hi i learn JS and i like it'.length);// выводим сообщение и узнаем длину строки
+
+
+// перевод текста с маленьких букв на большие
+  // var i = 'Hi world!';
+  // alert(i.toUpperCase());
+
+// var str = prompt('Tipe a massege');
+//   str = str.charAt(0).toUpperCase() + str.slice(1,5);
+//   alert(str);
+
+  //////////////////////////////// ищем в строке спам
+  // function checkSpam(str){
+  //   str = str.toLowerCase();
+  //   if (0 <= str.indexOf('viagra') || 0 <= str.indexOf('xxx')) {
+  //     return true;
+  //   }
+  //   else {
+  //     return false;
+  //   }
+
+  // }
+  // var str = prompt ('Ищем в строке спам')
+  // alert(checkSpam(str));
+
+/////////////////////////усечение стоки
+  // function truncate(str, maxlength){
+  //   //str = str.slice(0,maxlength);
+  //   if (str.length > maxlength) {
+  //     // i = maxlength-3;
+  //     str = str.slice(0, maxlength-3) + '...';
+  //     return str;
+  //   }
+  //   else {
+  //     return str;
+
+  //   }
+  // }
+  // var str = prompt('Введите строку');
+  // var maxlength = +prompt('Введите цифру - количество выводимых символов в строке');
+  // alert(truncate(str, maxlength));
+
+//////////////определяем пуст ли объект мой вариант
+  // function isEmpti(obj){
+  //   var counter = 0;
+  //   for (var key in obj){
+  //     counter++;
+  //   }
+  //   if (counter > 0) {
+  //     alert(false); //объект полон
+  //   }
+  //   else {
+  //     alert(true); //объект пуст
+  //   }
+  // }
+  // var sceduale = {
+  // name: 'Jine',
+  // age: 25,
+  // sex: 'fimale'
+  // };
+  // isEmpti(sceduale);
+
+
+/////////определяем пуст ли объект - короче вариант
+  // function isEmpti(obj){
+  //   for(var key in obj) {
+  //     return false; //объект полон
+  //   }
+  //   return true; //объект пуст
+  // }
+  // var schedule = {};
+  // schedule.age = 43;
+  // alert(isEmpti(schedule));
+
+/////////сумма свойств объекта
+  // var salaries = {
+  //   "Jim": 100,
+  //   "Dan": 200,
+  //   "Jane":300
+  // }
+  // var sal = 0;
+  // for (var key in salaries){
+  //
+  //   sal = sal + salaries[key];
+  // }
+  // alert(sal);
+
+////////Свойство с наибольшим значением
+// var salaries = {
+//   "Jim": 400,
+//   "Dan": 200,
+//   "Jane":1000
+// }
+// var sal = 0;
+// var maxSal = '';
+// for (var key in salaries) {
+//   if (sal < salaries[key]) {
+//     console.log(salaries[key]);
+//     sal = salaries[key];
+//     maxSal = sal;
+//   }
+// }
+// alert (maxSal);
+
+////Умножьте численные свойства на 2
+  // var salaries = {
+  //   "Jim": 400,
+  //   "Dan": 'Gim',
+  //   "Jane":1000
+  // }
+  // function isNumeric(n){
+  //   return !isNaN(parseFloat(n)) && isFinite(n);
+  // }
+  // for (var key in salaries){
+  //   if (isNumeric(salaries[key])) {
+  //     salaries[key] = salaries[key] * 2;
+  //   }
+  //   console.log(salaries[key]);
+  //
+  // }
+  // console.log(salaries);
+
+////////Arrey
+////Массывы
+
+////////Получить последний элемент массива
+  // var fruits = ['Яблоко', 'Слива', 'Жопа'];
+  // var a = fruits.length - 1;
+  // alert (fruits[a]);
+
+////Добавить новый элемент в массив
+  // var fruits = ['Яблоко', 'Слива', 'Жопа'];
+  // fruits.push('Компьютер');
+  // alert(fruits);
+
+///////Получить случайное значение из массива
+// var arr = ['Яблоко','Апельсин','Груша','Лимон'];
+// var min = 0;
+// var max = 3;
+// var rand = min + Math.floor(Math.random() * (max + 1 -min));
+// alert(arr[rand]);
+
+////////Создайте калькулятор для введённых значений
+  // var arr = [];
+  // while (true) {
+  //   var value = +prompt('Tipe a number', 0);
+  //   if (isNaN(value) || value == ' ' || value === null) {break};
+  //   arr.push(+value);
+  // }
+  // var sum = 0;
+  // for (var i = 0; i < arr.length; i++ ){
+  //   sum = arr[i] + sum;
+  // }
+  // console.log(arr);
+  // alert(sum);
+
+
+////////Методы объекта и контекст вызова
+  // var user = {
+  //   name: 'Василий',
+  //
+  //   sayHi: function() {
+  //     showName(this);
+  //   }
+  // };
+  //
+  // function showName(namedObj){
+  //   alert( namedObj.name );
+  // }
+  //
+  // user.sayHi();
+
+/////this в контексте функции как условный объект, который будет потом назначен
+  // var user = { firstName: 'Вася'};
+  // var admin = {firstName: 'Админ'};
+  //
+  // function func() {
+  //   alert (this.firstName);
+  // }
+  //
+  // /*  this равен объекту перед точкой */
+  // user.f = func;
+  // admin.g = func;
+  //
+  // user.f();
+  // admin.g();
+
+///////
+// var user = {
+// name: "Вася",
+// hi: function() { alert(this.name); },
+// bye: function() { alert("Пока"); }
+// };
+//
+// user.hi(); // Вася (простой вызов работает)
+// user.bye();
+
+////////ООП в функциональном стиле ---Кофеварка с новым методом стоп
+// function CoffeMachine(power) {
+//   this.waterAmount = 0;
+//
+//   var WATER_HEAT_CAPACITY = 4200;
+//
+//   var self = this;
+//
+//   function getBoildTime() {
+//     return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+//   }
+//
+//   function onReady() {
+//     alert('Кофе готово!')
+//   }
+//
+//   this.run = function () {
+//     timerId = setTimeout(onReady, getBoildTime());
+//   }
+//
+//   this.stop = function() {
+//     clearTimeout(timerId);
+//     alert('Кофе приготовлен не будет')
+//   }
+// }
+// var coffeMachine = new CoffeMachine(50000);
+// coffeMachine.waterAmount = 200;
+// coffeMachine.run();
+// coffeMachine.stop();
+
+//////
+// function CoffeMachine(power, capacity) {
+//   var waterAmount = 0;
+//
+//   var WATER_HEAT_CAPACITY = 4200;
+//
+//   function getTimeBoild () {
+//     return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+//   }
+//
+//   this.setWaterAmount = function (amount) {
+//     if (amount < 0) {
+//       //throw new Error ('Значение должно быть положительным');
+//       alert ('Значение должно быть положительным');
+//     }
+//     if (amount > capacity) {
+//       //throw new Error ('Нельзя залить воды больше, чем ' + capacity);
+//       alert ('Нельзя залить воды больше, чем ' + capacity);
+//     }
+//     waterAmount = amount;
+//   }
+//
+//   function onReady() {
+//     alert('Кофе готов!');
+//   }
+//
+//   this.run = function() {
+//     setTimeout(onReady, getTimeBoild());
+//   }
+// }
+//
+// var coffeMachine = new CoffeMachine(1000, 500);
+// coffeMachine.setWaterAmount(-400);
+
+/////Задача Написать объект с геттерами и сеттерами
+// function User() {
+//   var firstName, surname;
+//
+//   this.setFirstName = function(newFirstName) {
+//     firstName = newFirstName;
+//   }
+//   this.setSurname = function (newSurname) {
+//     surname = newSurname;
+//   }
+//   this.getFullName = function() {
+//     return firstName + ' ' + surname;
+//   }
+// }
+//
+// var user = new User();
+// user.setFirstName("Петя");
+// user.setSurname("Иванов");
+//
+// alert( user.getFullName() ); // Петя Иванов
+
+
+/////////////////////
+// function Machine(power) {
+//   this._power = power;
+
+//   this._enabled = false;
+
+//   this.enable = function() {
+//     this._enabled = true;
+//   };
+
+//   this.disable = function() {
+//     this._enabled = false;
+//   };
+// }
+
+// function CoffeeMachine(power) {
+//   Machine.apply(this, arguments);
+
+//   alert( this._enabled );
+//   alert( this._power);
+// }
+
+// var coffeeMachine = new CoffeeMachine(10000);
+
+
+/////
+// function Machine(power) {
+//   this._power = power;
+//   this._enabled = false;
+
+//   var self = this;
+
+//   this.enable = function() {
+//     self._enabled = true;
+//   };
+
+//   this.disable = function() {
+//     self._enabled = false;
+//   };
+// }
+// function Fridge(power) {
+//   Machine.apply(this, arguments);
+//   this._food = [];
+//   this._capacity = power / 100;
+//   this._currentLoad = this._food.length;
+//   this.addFood = function(){
+//     if (this._enabled) {
+//       if (this._currentLoad + arguments.length <= this._capacity) {
+//         for (var i = 0; i < arguments.length; i++) {
+//           this._food.push(arguments[i]); // добавить всё из arguments
+//         }
+//       }
+//       else {
+//       console.Error('не влазит');
+//     }
+//     }
+//     else {
+//       console.Error('Ошибка');
+//     }
+//   }
+//   this.getFood = function() {
+//     return this._food.slice();
+//   }
+//   this.filteredFood = function (filter) {
+//     return this._food.filter(filter);
+//   }
+//   this.removedFood = function (item){
+//     var index = this.indexOf(item);
+//     if (index >=0) {
+//       this._food.splise(index, 1);
+//     }
+//   }
+//   var parentDisable = this.disable;
+//     this.disable = function(){
+//       if (this._currentLoad > 0) {
+//         console.error('в холодильнике есть еда');
+//       } 
+//       else {
+//         parentDisable();
+//       }
+//     }
+// }
+// var fridge = new Fridge(500);
+// fridge.enable();
+// fridge.addFood("котлета");
+// fridge.addFood("сок", "варенье");
+
+// var fridgeFood = fridge.getFood();
+// alert( fridgeFood ); // котлета, сок, варенье
+
+// // добавление элементов не влияет на еду в холодильнике
+// fridgeFood.push("вилка", "ложка");
+
+// alert( fridge.getFood() ); // внутри по-прежнему: котлета, сок, варенье
+
+
+
+////// 
+// var worker 
+function Worker(name, lastname, rate, upgrade, dedline) {
+  this.name = name;
+  this.lastname = lastname;
+  this._rate = rate;
+  this._upgrade = 1 + upgrade / 100;
+  this._dedline = dedline;
+  var lastSalary = 0;
+
+  this.getRate = function(){
+    return this._rate;
+  }
+  this.setRate = function(r){
+      this._rate = r;
+    }
+  this.getSalary = function (h){
+    if (h <= 160) {
+      lastSalary =  h*this._rate;
+    }
+    else {
+      lastSalary = 160 * this._rate + (h - 160) * this._rate * this._upgrade;
+    }
+    if (this._dedline == false){
+      lastSalary = 0.8 * lastSalary;
+    }
+    return lastSalary;
+  }
+  this.getInfo = function(){
+    var obj = {
+      worker: this.name + ' ' + this.lastname,
+      salary: lastSalary
+    }
+    return obj;
+  }
+}
+var worker = new Worker('John', 'Doe', 20, 25, false);
+console.log(worker.getSalary(180));
+console.log(worker.getInfo());
+
+    </script>
+  </body>
+</html>
